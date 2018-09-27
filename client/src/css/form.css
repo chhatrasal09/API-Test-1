@@ -1,0 +1,14 @@
+.FormElement{
+    margin-top: 1%;
+}
+
+label {
+    text-align: start;
+    margin-left: 0;
+    margin-right: 100px;
+}
+
+input {
+    margin-left: 200px;
+    padding: 4px;
+}
