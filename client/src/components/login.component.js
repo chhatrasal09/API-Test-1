@@ -28,8 +28,8 @@ export default class Login extends Component {
 
     handleSubmit(event) {
         event.preventDefault();
-        // const apiUrl = 'http://18.223.235.175/api/auth/login';
-        const apiUrl = 'http://localhost:4000/auth/login';
+        const apiUrl = 'http://18.223.235.175/api/auth/login';
+        // const apiUrl = 'http://localhost:4000/auth/login';
         let payload = {
             user: {
                 email: this.state.email,

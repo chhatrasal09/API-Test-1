@@ -17,26 +17,6 @@ class Register extends Component {
         this.handleChange = this.handleChange.bind(this);
     }
 
-    // handleClick(event) {
-    //     let self = this;
-    //     const apiUrl = 'http://localhost:4000/auth/register';
-    //     let payload = {
-    //         email: this.state.email,
-    //         password: this.state.password
-    //     };
-    //     console.log(self.props.appContext);
-    // axios.post(apiUrl, payload)
-    //     .then(response => {
-    //         this.setState({authToken: response.data.user.token});
-    //         let uploadScreen = [];
-    //         uploadScreen.push(<UpdateEventScreen appContext={self.props.parentContext}/>);
-    //         self.props.parentContext.setState({loginScreen: [], updateScreen: uploadScreen});
-    //     })
-    //     .catch(error => {
-    //         console.log(error)
-    //     });
-    // }
-
     handleChange(event) {
         this.setState({
             [event.target.id]: event.target.value
@@ -44,8 +24,8 @@ class Register extends Component {
     }
 
     handleRegister() {
-        // const apiUrl = 'http://18.223.235.175/api/auth/register';
-        const apiUrl = 'http://localhost:4000/auth/register';
+        const apiUrl = 'http://18.223.235.175/api/auth/register';
+        // const apiUrl = 'http://localhost:4000/auth/register';
         let payload = {
             user: {
                 email: this.state.email,

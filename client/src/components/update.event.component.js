@@ -21,8 +21,8 @@ class UpdateEvent extends Component {
     }
 
     handleUpdate() {
-        // const apiUrl = 'http://18.223.235.175/api/events/postData';
-        const apiUrl = 'http://localhost:4000/events/postData';
+        const apiUrl = 'http://18.223.235.175/api/events/postData';
+        // const apiUrl = 'http://localhost:4000/events/postData';
         axios.post(apiUrl, this.state)
             .then((response) => {
                 console.log(response);
