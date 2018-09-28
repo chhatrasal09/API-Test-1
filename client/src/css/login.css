@@ -1,12 +1,8 @@
-.FormControl{
-    margin: auto;
-}
-
-.RootBody {
+.Login {
     padding: 60px 0;
 }
 
-.RootBody form {
+.Login form {
     margin: 0 auto;
     max-width: 320px;
 }
